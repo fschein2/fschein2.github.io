@@ -1,0 +1,43 @@
+/* Structure */
+
+body {
+    background-color:azure;
+}
+
+/* Tables */
+
+table {
+    border-collapse: collapse;
+}
+
+td, 
+th {
+    border: 3px solid darkcyan;
+    background-color:lawngreen;
+}
+
+th {
+    background-color:orange;
+}
+
+/* Typography */
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-color: darkgreen;
+    color:crimson;
+    font-style: oblique;
+}
+
+h2 {
+    background-color: lightpink;
+    color:cadetblue;
+    font-style: unset;
+}
+
+p {
+    color:blueviolet;
+}
