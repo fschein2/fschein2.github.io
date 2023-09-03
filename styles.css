@@ -1,3 +1,49 @@
+/* Structure */
 body {
-    background-color:darkgoldenrod;
+    background:#67151B;
+}
+
+#content {
+    background-color: #E3D3C4;
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px #161A1E;
+}
+
+h1 {
+    color: #67151B;
+}
+
+p {
+    background-color:#E8AA9B;
+    color:#161A1E;
+    margin: auto;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+/* Navigation */
+#assignment-nav a {
+    text-decoration: none;
+    background-color:#E8AA9B;
+    color:#161A1E;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+#assignment-nav a:hover {
+    background-color:#67151B;
+    color:#FDFBFF;
+}
+
+#assignment-nav li {
+    margin: 10px;
+}
+
+/* Typography */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #161A1E;
 }
