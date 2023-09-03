@@ -1,7 +1,16 @@
 /* Structure */
 
 body {
-    background-color:azure;
+    background-color:cadetblue;
+}
+
+#content {
+    background-color: thistle;
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px orangered;
 }
 
 /* Tables */
@@ -40,4 +49,37 @@ h2 {
 
 p {
     color:blueviolet;
+}
+
+.big {
+    font-size: 30px;
+}
+
+/* Navigation */
+a {
+    text-decoration: none;
+    background-color: blue;
+    color: crimson;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+
+a:hover {
+    background-color: aqua;
+}
+
+#main-nav a {
+    background-color: deepskyblue;
+    color: brown;
+}
+
+#main-nav a:hover {
+    background-color: limegreen;
+}
+
+/* Images */
+img {
+    border: 5px solid black;
+    border-radius: 5px;
 }
