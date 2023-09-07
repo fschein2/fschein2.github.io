@@ -134,8 +134,20 @@ footer {
         padding: 4% 15% 4% 15%;
     }
 
-    #pictures ul {
-        justify-content: space-evenly;
+    #footer-content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        justify-content: space-between;
+    }
+    
+    #address {
+        text-align: right;
+    }
+
+    #copywrite {
+        position: absolute;
+        left: 47.5%;
     }
 
 }
