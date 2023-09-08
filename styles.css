@@ -1,9 +1,10 @@
 /* Structure */
+
 body {
     background:#67151B;
 }
 
-#content {
+header {
     background-color: #E3D3C4;
     width: 75%;
     margin: auto;
@@ -14,36 +15,89 @@ body {
 
 h1 {
     color: #67151B;
+    text-align: center;
 }
 
-p {
-    background-color:#E8AA9B;
-    color:#161A1E;
+.assignments {
     margin: auto;
+    width: 60%;
+    border: 3px solid black;
     border-radius: 5px;
-    padding: 8px;
+    padding: 10px;
 }
+
 
 /* Navigation */
-#assignment-nav a {
+
+#assignment-nav a, .assignments {
     text-decoration: none;
     background-color:#E8AA9B;
     color:#161A1E;
     padding: 3px;
     border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
 
 #assignment-nav a:hover {
-    background-color:#67151B;
-    color:#FDFBFF;
+    color: white;
+}
+
+.assignments img {
+    border: 2px solid rgba(0, 0, 0, 0)
+}
+
+.assignments img:hover {
+    border: 2px solid #161A1E;
+    border-radius: 5px;
+}
+
+#assignment-nav ul {
+    list-style-type: none;
+    padding-left: 0px;
+    text-align: center;
 }
 
 #assignment-nav li {
     margin: 10px;
 }
 
+/* Images */
+
+img {
+    width: 300px;
+    height: 150px;
+}
+
 /* Typography */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #161A1E;
 }
+
+#content h2 {
+    color:#E3D3C4;
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+/* Larger Resolution */
+
+@media only screen and (min-width: 750px) {
+    #assignment-nav {
+        display: flex;
+    }
+
+    .assignments {  
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: auto;
+        margin-bottom: auto; 
+    }
+}
+
