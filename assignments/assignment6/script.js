@@ -17,16 +17,25 @@ const animate = () => {
 // Input
 
 const addComment = () => {
-    productName = document.getElementById("product-name").value;
-    comment = document.getElementById("comment").value;
-    rating = document.getElementById("rating").value;
-    userName = document.getElementById("user-name").value;
+    
+    const productName = document.getElementById("product-name").value;
+    const comment = document.getElementById("comment").value;
+    const rating = document.getElementById("rating").value;
+    const userName = document.getElementById("user-name").value;
+    
 
-    const currentDiv = document.getElementById("replace");
-    newDiv = document.createElement("div");
-    newContent = document.createTextNode(productName + "\n" + rating + "/5 stars " + comment + "\nby " + userName);
-    newDiv.appendChild(newContent);
-    document.body.insertBefore(newDiv, currentDiv);
+    var div = document.createElement("div");
+    div.style.margin = "5px";
+    div.style.borderWidth = "1px";
+    div.style.borderStyle = "solid";
+    div.style.borderColor = "cornflowerblue";
+    div.style.backgroundColor = "blanchedalmond";
+    div.style.color = "black";
+    div.style.padding = "5px";
+    div.innerHTML = productName + "\n" + rating + "/5 stars " 
+                    + comment + "\nby " + userName;
+
+    document.getElementById("input").appendChild(div);
 };
 
 
