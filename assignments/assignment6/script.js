@@ -34,7 +34,9 @@ const addComment = () => {
     div.style.padding = "5px";
     div.innerHTML = productName + "\n" + rating + "/5 stars " 
                     + comment + "\nby " + userName;
-
+    /* div.innerHTML = <section class="top">productName</section> 
+       then style the class in the css to style each part individually
+       section out each part of the comment */
     document.getElementById("input").appendChild(div);
 };
 
