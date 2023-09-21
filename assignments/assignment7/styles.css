@@ -1,4 +1,8 @@
 /* Structure */
+:root {
+    --amount: 0%;
+}
+
 
 body {
     background-color: white;
@@ -85,6 +89,45 @@ label {
 
 /* Fundraising */
 
+#thermometer {
+    width: 125px;
+    height: 450px;
+    background: linear-gradient(0deg, red var(--amount), white var(--amount) 100%);
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
 #display-button {
     margin-left: 10px;
+}
+
+/* Larger Resolution */
+
+@media only screen and (min-width: 750px) {
+    .hide-small {
+        display: block;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #main-items {
+        display: flex;
+    }
+
+    #main-items li {
+        flex: 1;
+    }
+
+    #oldest {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    #fundraiser {
+        max-width: 700px;
+        margin: auto;
+    }
 }
