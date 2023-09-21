@@ -19,10 +19,8 @@ const displayOrder = () => {
     const name1 = document.getElementById("txt-name1").value;
     const name2 = document.getElementById("txt-name2").value;
     const name3 = document.getElementById("txt-name3").value;
-
-    if(age1 == null || age2 == null|| age3 == null) {
-        document.getElementById("comparison").innerHTML("Not good")
-    }
+    /* need to make it compare and list names by age order o-y
+       if invalid data is in age cells show error message */
 };
 
 /* Need to make it load with exercise 1 on screen */
