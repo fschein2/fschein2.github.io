@@ -15,19 +15,20 @@ header {
 #oldest {
     background-color: lightsalmon;
     padding: 5px;
+    border-radius: 5px;
 }
 
 
 #fundraiser {
     background-color: lightsalmon;
     padding: 5px;
+    border-radius: 5px;
 }
 
 /* Navigation */
 
 #main-nav ul {
     padding-left: 0px;
-    padding-top: 5px;
     background-color: whitesmoke;
     text-align: center;
     color: coral;
@@ -39,6 +40,14 @@ header {
 }
 
 #main-nav li:hover {
+    background-color: lightgray;
+}
+
+#exercise1.selected1 {
+    border-bottom: 3px solid coral;
+}
+
+#exercise2.selected2 {
     border-bottom: 3px solid coral;
 }
 
