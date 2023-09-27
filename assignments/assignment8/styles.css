@@ -1,0 +1,60 @@
+/* Structure */
+
+:root {
+    --amount: 0%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+}
+
+.main-style {
+    background-color: cornflowerblue;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main-style h1 {
+    text-align: center;
+}
+
+/* Running Man */
+
+#running-man {
+    height: fit-content;
+}
+
+img {
+    margin: 10px 0px 20px 10px;
+    width: 50px;
+    height: 100px;
+}
+
+/* Fund Raiser */
+
+#fundraiser h2, p {
+    padding-left: 20px;
+}
+
+/* Thermometer */
+
+#thermometer {
+    width: 125px;
+    height: 450px;
+    background: linear-gradient(0deg, red var(--amount), white var(--amount) 100%);
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/* Flex */
+
+#main {
+    display: flex;
+    align-items: center;
+}
+
+#main div {
+    flex: 1;
+}
