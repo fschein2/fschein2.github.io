@@ -1,3 +1,7 @@
+const runMan = () => {
+    
+}
+
 const setThermometer = () => {
     const end = parseInt(document.getElementById("txt-funds").value);
     const root = document.querySelector(":root");
@@ -19,4 +23,5 @@ const setThermometer = () => {
 
 window.onload = () => {
     document.getElementById("display-button").onclick = setThermometer;
+    document.getElementById("image").onclick = runMan;
 }
