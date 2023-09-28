@@ -2,7 +2,7 @@
 
 :root {
     --amount: 0%;
-    --position: 0px;
+    --position: 10px;
 }
 
 body {
@@ -27,8 +27,8 @@ body {
     height: fit-content;
 }
 
-img {
-    margin: 10px 0px 20px 10px;
+#running-man img {
+    margin: 10px 0px 20px var(--position);
     width: 50px;
     height: 100px;
 }
