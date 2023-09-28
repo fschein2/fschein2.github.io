@@ -2,6 +2,7 @@
 
 :root {
     --amount: 0%;
+    --position: 0px;
 }
 
 body {

@@ -94,13 +94,12 @@ p {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        margin: auto;
     }
 
     .assignments {  
-        margin: auto;
         margin-bottom: 10px;
-        max-width: 28%;
+        max-width: 30%;
+        flex-grow: 0;
     }
 }
 
