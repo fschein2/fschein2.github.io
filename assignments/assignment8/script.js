@@ -6,21 +6,21 @@ const runMan = () => {
     let count = 10;
     
     const moveMan = setInterval(() => {
-        count++;;
+        count++;
         root.style.setProperty("--position", `${count}px`);
         let image = document.getElementById("image");
 
         if (count % 2 == 0) {
-            image.src = "images/stickman2.jpg";
+            image.src = "images/stick-man.png";
         } else {
-            image.src = "images/stickman.jpg";
-        }     
+            image.src = "images/stick-man2.png";
+        }
 
         if (count >= end) {
             clearInterval(moveMan);
         }
 
-    }, 250);
+    }, 500);
 };
 
 const setThermometer = () => {

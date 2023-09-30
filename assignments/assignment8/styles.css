@@ -29,8 +29,8 @@ body {
 
 #running-man img {
     margin: 10px 0px 20px var(--position);
-    width: 50px;
-    height: 100px;
+    max-width: 150px;
+    max-height: 100px;
 }
 
 /* Fund Raiser */
