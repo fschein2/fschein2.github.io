@@ -8,18 +8,19 @@ const runMan = () => {
     const moveMan = setInterval(() => {
         count++;;
         root.style.setProperty("--position", `${count}px`);
+        let image = document.getElementById("image");
 
         if (count % 2 == 0) {
-
+            image.src = "images/stickman2.jpg";
         } else {
-
+            image.src = "images/stickman.jpg";
         }     
 
         if (count >= end) {
             clearInterval(moveMan);
         }
 
-    }, 1);
+    }, 250);
 };
 
 const setThermometer = () => {
