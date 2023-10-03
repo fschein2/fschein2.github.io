@@ -21,6 +21,11 @@ const displayQuotes = () => {
     }, 2000);
 };
 
+const drawRainbow = () => {
+
+};
+
 window.onload = () => {
     displayQuotes();
+    document.getElementById("rainbow-button").onclick(drawRainbow);
 };
