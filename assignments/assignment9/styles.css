@@ -1,0 +1,45 @@
+/* Structure */
+
+:root {
+    --bodycolor: rgb(44, 42, 42);
+    --divcolor: dodgerblue;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bodycolor);
+    color: var(--bodycolor);
+}
+
+.main-style {
+    background-color: var(--divcolor);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 300px;
+}
+
+.main-style h1 {
+    text-align: center;
+}
+
+/* Button */
+
+button {
+    
+    background-color: var(--bodycolor);
+    color: var(--divcolor);
+    border: none;
+    border-radius: 3px;
+}
+
+/* Flex */
+
+#main {
+    display: flex;
+    align-items: center;
+}
+
+#main div {
+    flex: 1;
+}
