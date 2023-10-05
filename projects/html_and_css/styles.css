@@ -1,0 +1,154 @@
+/* Structure */
+
+:root {
+    /* Nav */
+    --backColor: whitesmoke;
+    --hoverColor: lightgray;
+    --borderColor: black;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+/* Navigation */
+
+#main-items {
+    padding-left: 0px;
+}
+
+#main-items li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: var(--backColor);
+    border: 2px solid var(--borderColor);
+    border-radius: 5px;
+    width: 130px;
+    padding: 5px;
+}
+
+#main-items li:hover {
+    background-color: var(--hoverColor);
+}
+
+#main-items a {
+    text-decoration: none;
+    color: black;
+}
+
+#expand {
+    width: 20px;
+}
+
+.hide-small {
+    display: none;
+}
+
+/* Home */
+
+#home-content {
+    margin: 20px;
+}
+
+#home-content h1 {
+    text-align: center;
+}
+
+#home-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+#main-info {
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#websites {
+    padding-left: 0px;
+    margin: 30px;
+}
+
+#websites li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: large;
+}
+
+#websites a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+}
+
+#websites a:hover {
+    border-bottom: 2px solid black;
+}
+
+/* Contact Me */
+
+#message {
+    text-align: center;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    padding: 2px;
+    padding-right: 10px;
+}
+
+.columns {
+    display: flex;
+}
+
+/* Larger Resolution */
+
+@media only screen and (min-width: 725px) {
+
+    /* Nav */
+
+    .hide-small {
+        display: block;
+    }
+
+    #expand {
+        display: none;
+    }
+
+    #main-items {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        max-width: 800px;
+    }
+
+    #main-items li {
+       padding-left: 0px;
+    }
+
+    #main-items a {
+        flex: 1;
+    }
+
+    /* Home */
+
+    #websites {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        max-width: 800px;
+    }
+
+    #websites li {
+        flex: 1;
+        padding-left: 0px;
+    }
+}

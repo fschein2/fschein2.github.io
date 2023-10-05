@@ -85,7 +85,6 @@ const fillThermometer = () => {
     }
 };
 
-/* Need to make it load with exercise 1 on screen */
 window.onload = () => {
     document.getElementById("hamburger").onclick = toggleNav;
     document.getElementById("exercise1").onclick = showExercise1;
