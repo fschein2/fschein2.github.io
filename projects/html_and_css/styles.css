@@ -153,6 +153,44 @@ body {
     text-align: center;
 }
 
+/* Example Code */
+
+.ex-code-style {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px 10px 40px 10px;
+    color: black;
+    background: var(--backColor);
+}
+
+.ex-code-style a {
+    text-decoration: none;
+    color: black;
+}
+
+.ex-code-style a {
+    border-bottom: 2px solid transparent;
+}
+
+.ex-code-style a:hover {
+    border-bottom: 2px solid black;
+}
+
+.ex-code-style img {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.ex-code-style img:hover {
+    border: 1px solid black;
+}
+
+/* Expanded Code */
+
+
+
 /* Coding Projects */
 
 .proj-click {
