@@ -29,7 +29,7 @@ body {
     background-color: var(--backColor);
     border: 2px solid var(--borderColor);
     border-radius: 5px;
-    width: 130px;
+    width: 125px;
     padding: 5px;
 }
 
@@ -96,6 +96,63 @@ body {
     border-bottom: 2px solid black;
 }
 
+/* Resume */
+
+#resume {
+    margin: auto;
+    max-width: 800px;
+    border: 1px solid black;
+    min-height: 900px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#name {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#contact-info {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.sec {
+    margin-left: 70px;
+    margin-bottom: 0px;
+}
+
+#school {
+    margin-left: 120px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#edu {
+    margin-left: 110px;
+    margin-top: 0px;
+}
+
+#edu li {
+    margin-top: 0px;
+    list-style-type: none;
+}
+
+.job {
+    margin-left: 120px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.job-description {
+    margin-top: 0px;
+    margin-left: 120px;
+}
+
+#button-div {
+    text-align: center;
+}
+
 /* Coding Projects */
 
 .proj-click {
@@ -123,6 +180,29 @@ body {
 }
 
 .proj-style p {
+    text-align: left;
+}
+
+/* Expanded Project */
+
+.back-nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+
+.expanded-project {
+    text-align: center;
+    margin: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.expanded-project img {
+    max-width: 100%;
+}
+
+.expanded-project p {
     text-align: left;
 }
 
@@ -158,6 +238,11 @@ label {
 
     /* Nav */
 
+    #navigation {
+        margin: auto;
+        max-width: 800px;
+    }
+
     .hide-small {
         display: block;
     }
@@ -171,10 +256,11 @@ label {
         align-items: center;
         margin: auto;
         max-width: 800px;
+        padding-left: 18px;
     }
 
     #main-items li {
-       padding-left: 0px;
+      padding-left: 0px;
     }
 
     #main-items a {
