@@ -189,7 +189,40 @@ body {
 
 /* Expanded Code */
 
+.code-style {
+    text-align: center;
+    background-color: var(--backColor);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
 
+.code-style h3 {
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.code-style p {
+    text-align: left;
+    margin-top: 0px;
+}
+
+.add-code {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.add-code div {
+    width: 310px;
+    text-align: center;
+    padding-left: 5px;
+    margin: auto;
+}
+
+#add-code-button {
+    text-align: center;
+    margin-top: 10px;
+}
 
 /* Coding Projects */
 
