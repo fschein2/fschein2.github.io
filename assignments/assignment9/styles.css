@@ -29,8 +29,61 @@ body {
     padding: 3px;
     background-color: var(--bodycolor);
     color: var(--divcolor);
-    border: none;
+    border: 1px solid black;
     border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+#rainbow-button:active {
+    background-color: black;
+}
+
+/* Rainbow */
+
+.rainbow-style {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.purple {
+    background-color: purple;
+}
+
+#rainbow {
+    position: relative;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    right: 35px;
+    top: 170px
+}
+
+.hidden {
+    display: none;
 }
 
 /* Flex */

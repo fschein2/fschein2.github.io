@@ -21,11 +21,46 @@ const displayQuotes = () => {
     }, 2000);
 };
 
-const drawRainbow = () => {
+let count = 1;
 
+const drawRainbow = () => {
+    const firstColor = document.querySelector(
+        `#rainbow :nth-child(${count})`
+    );
+    const secondColor = firstColor.nextElementSibling;
+    const thirdColor = secondColor.nextElementSibling;
+    const fourthColor = thirdColor.nextElementSibling;
+    const fifthColor = fourthColor.nextElementSibling;
+    const sixthColor = fifthColor.nextElementSibling;
+    
+    firstColor.classList.add("red");
+    const draw = setInterval(() => {
+        if(count == 1) {
+            secondColor.classList.add("orange");
+        } else if (count == 2) {
+            thirdColor.classList.add("yellow");
+        } else if (count == 3) {
+            fourthColor.classList.add("green");
+        } else if (count == 4) {
+            fifthColor.classList.add("blue");
+        } else if (count == 5) {
+            sixthColor.classList.add("purple");
+        } 
+
+        if(sixthColor.classList.contains("purple")) {
+            document.getElementById("gold").classList.remove("hidden");
+        }
+
+        count++;
+        if (count == 6) {
+            clearInterval(draw);
+        }
+    }, 1000 );
 };
+
+
 
 window.onload = () => {
     displayQuotes();
-    document.getElementById("rainbow-button").onclick(drawRainbow);
+    document.getElementById("rainbow-button").onclick = drawRainbow;
 };
