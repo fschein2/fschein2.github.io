@@ -11,6 +11,7 @@ header {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 10px 10px #161A1E;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -26,8 +27,47 @@ h1 {
     padding: 10px;
 }
 
+/* Nav */
 
-/* Navigation */
+#main-items {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+#main-items a {
+    text-decoration: none;
+    color: #161A1E;
+}
+
+#main-items li {
+    background-color: #E3D3C4;
+    margin: 10px;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid #161A1E;
+    border-radius: 5px;
+}
+
+#main-items li:hover {
+    background-color: #E8AA9B;
+}
+
+/* Hamburger */
+
+#hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    margin-left: 10px;
+}
+
+.hide-small {
+    display: none;
+}
+
+/* Assignments */
 
 #assignment-nav a, .assignments {
     text-decoration: none;
@@ -63,6 +103,34 @@ h1 {
     margin: 10px;
 }
 
+/* Projects */
+
+#project-nav a, .assignments {
+    text-decoration: none;
+    background-color:#E8AA9B;
+    color:#161A1E;
+    padding: 3px;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#project-nav a:hover {
+    color: white;
+}
+
+
+#project-nav ul {
+    list-style-type: none;
+    padding-left: 0px;
+    text-align: center;
+}
+
+#project-nav li {
+    margin: 10px;
+}
+
 /* Images */
 
 img {
@@ -90,7 +158,35 @@ p {
 /* Larger Resolution */
 
 @media only screen and (min-width: 750px) {
+    .hide-small {
+        display: block;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #main-items {
+        display: flex;
+    }
+
+    #main-items li {
+        flex: 1;
+        width: 250px;
+    }
+
+    #nav-items {
+        width: fit-content;
+        margin: auto;
+    }
+
     #assignment-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    #project-nav {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
