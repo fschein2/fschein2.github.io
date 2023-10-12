@@ -1,0 +1,20 @@
+body {
+    background-color: dodgerblue;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+#toys section {
+    background-color: white;
+    /*max-width: fit-content;*/
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+img {
+    max-width: 100%;
+}
