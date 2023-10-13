@@ -1,12 +1,12 @@
 /* Structure */
 
 :root {
-    --backColor: #686868;
-    --tabColor: #969696;
-    --hoverColor: #D6D6D6;
-    --borderColor: #000000;
-    --textColor1: #000000;
-    --textColor2: #222222;
+    --backColor: #000000;
+    --tabColor: #222222;
+    --hoverColor: #260104;
+    --borderColor: #8C030E;
+    --textColor1: #8C030E;
+    --textColor2: #8C031C;
 }
 
 body {
@@ -68,7 +68,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
-    border: 2px solid var(--borderColor);
+    /*border: 2px solid var(--borderColor);*/
     border-radius: 5px;
 }
 
@@ -77,6 +77,10 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    background-color: var(--tabColor);
+    padding: 10px;
+    border: 2px solid var(--borderColor);
+    border-radius: 5px;
 }
 
 #websites {
@@ -166,9 +170,12 @@ body {
     text-align: center;
     border: 2px solid var(--borderColor);
     border-radius: 5px;
-    margin: 20px 10px 40px 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
     color: var(--textColor2);
     background: var(--tabColor);
+    max-width: 950px;
 }
 
 .ex-code-style a {
@@ -176,6 +183,7 @@ body {
     color: var(--textColor2);
 }
 
+/*
 .ex-code-style h1 {
     border-bottom: 2px solid transparent;
     max-width: max-content;
@@ -187,11 +195,15 @@ body {
 .ex-code-style h1:hover {
     border-bottom: 2px solid var(--textColor2);
 }
+*/
 
 .ex-code-style img {
     border: 2px solid transparent;
     border-radius: 5px;
     margin-bottom: 10px;
+    margin-top: 10px;
+    max-height: 150px;
+    padding: 10px;
 }
 
 .ex-code-style img:hover {
@@ -261,6 +273,8 @@ body {
 
 .proj-style img {
     max-width: 100%;
+    height: 150px;
+    width: 150px;
     border: 1px solid var(--borderColor);
     border-radius: 3px;
 }
@@ -286,6 +300,8 @@ body {
 
 .expanded-project img {
     max-width: 100%;
+    height: 600px;
+    width: 600px;
 }
 
 .expanded-project p {
