@@ -2,19 +2,69 @@ body {
     background-color: dodgerblue;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
 }
 
 h2 {
     text-align: center;
 }
 
-#toys section {
+#toy-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    position: absolute;
+}
+
+.toy-style {
+    opacity: 1;
     background-color: white;
-    /*max-width: fit-content;*/
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: fit-content;
+    transition: .5s ease;
     margin: auto;
     margin-bottom: 50px;
+    backface-visibility: hidden;
+}
+
+.toy-style:hover {
+    opacity: 0.3;
+}
+
+
+#hover-div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    position: absolute;
+}
+
+.hover-style {
+    transition: .5s ease;
+    opacity: 0;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.hover-style:hover {
+    opacity: 1;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
 }
 
 img {
+    width: 300px;
+    height: 300px;
     max-width: 100%;
 }
