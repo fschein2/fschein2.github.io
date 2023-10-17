@@ -3,10 +3,11 @@
 :root {
     --backColor: #000000;
     --tabColor: #222222;
+    --buttonColor: #333333;
     --hoverColor: #260104;
     --borderColor: #8C030E;
     --textColor1: #8C030E;
-    --textColor2: #8C031C;
+    --textColor2: #B2022F;
 }
 
 body {
@@ -356,16 +357,16 @@ label {
 
 input {
     background-color: var(--tabColor);
-    color: var(--textColor1);
-    border: 2px solid var(--textColor2);
+    color: var(--textColor2);
+    border: 2px solid var(--borderColor);
     border-radius: 3px;
 }
 
 /* Button Style */
 
 button {
-    background-color: var(--tabColor);
-    color: var(--textColor1);
+    background-color: var(--buttonColor);
+    color: var(--textColor2);
     border-style: none;
     border: 1px solid var(--borderColor);
     border-radius: 3px;
