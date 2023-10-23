@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <div id="navigation">
+            <div id="expand">
+                <h1>&plus;</h1>
+            </div>
+            <ul id="main-items" class="hide-small">
+                <a href="index.html"><li id="home-tab" class="nav">Home</li></a>
+                <a href="resume.html"><li id="resume-tab" class="nav">Resume</li></a>
+                <a href="exampleCode.html"><li id="ex-code-tab" class="nav">Example Code</li></a>
+                <a href="codeProjects.html"><li id="code-proj-tab" class="nav">Coding Projects</li></a>
+                <a href="contactMe.html"><li id="contact-tab" class="nav">Contact Me</li></a>
+            </ul>
+        </div>
+        <div id="contact-content">
+            <form id="message">
+                <p class="columns">
+                    <label for="txt-name">Name:</label>
+                    <input type="text" id="txt-name" required/>
+                </p>
+                <p class="columns">
+                    <label for="txt-email">Email:</label>
+                    <input type="email" id="txt-email" required/>
+                </p>
+                <p class="columns">
+                    <label for="txt-message">Message:</label>
+                    <input type="text" id="txt-message" required/>
+                </p>
+                <button type="submit">Submit</button>
+                <p class="hide">Thank you for reaching out!</p>
+            </form>
+        </div>
+    </body>
+</html>
