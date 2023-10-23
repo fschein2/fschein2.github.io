@@ -16,9 +16,6 @@ const toggleNav = () => {
 // Coding Projects
 
 
-// Contact Me
-
-
 // onload
 
 window.onload = () => {

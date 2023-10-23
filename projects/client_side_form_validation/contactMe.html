@@ -20,22 +20,30 @@
             </ul>
         </div>
         <div id="contact-content">
-            <form id="message">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="72715b0f-4961-4dad-89e2-8dab16774645"/>
+
                 <p class="columns">
                     <label for="txt-name">Name:</label>
-                    <input type="text" id="txt-name" required/>
+                    <input id="txt-name" type="text" name="name" required/>
                 </p>
                 <p class="columns">
-                    <label for="txt-email">Email:</label>
-                    <input type="email" id="txt-email" required/>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" required/>
                 </p>
                 <p class="columns">
-                    <label for="txt-message">Message:</label>
-                    <input type="text" id="txt-message" required/>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
                 </p>
-                <button type="submit">Submit</button>
-                <p class="hide">Thank you for reaching out!</p>
+
+                <input type="hidden" name="redirect" value="https://web3forms.com/success"/>
+                <input type="hidden" name="subject" value="Contact from my website"/>
+                <input type="hidden" name="from_name" value="My Website"/>
+
+                <button id="send-button" type="submit">Submit</button>
+                <p id="confirmation"></p>
             </form>
         </div>
+        <script src="contactme.js"></script>
     </body>
 </html>
