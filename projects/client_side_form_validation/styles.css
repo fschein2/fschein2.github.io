@@ -262,9 +262,24 @@ body {
     margin: auto;
 }
 
+input[type="url"] {
+    background-color: var(--tabColor);
+    color: var(--textColor2);
+    border: 2px solid var(--borderColor);
+    border-radius: 3px;
+}
+
+#code-image {
+    width: 189px;
+}
+
 #add-code-button {
     text-align: center;
     margin-top: 4px;
+}
+
+#code-result {
+    text-align: center;
 }
 
 /* Coding Projects */
@@ -363,7 +378,14 @@ label {
     display: flex;
 }
 
-input {
+input[type="text"] {
+    background-color: var(--tabColor);
+    color: var(--textColor2);
+    border: 2px solid var(--borderColor);
+    border-radius: 3px;
+}
+
+input[type="email"] {
     background-color: var(--tabColor);
     color: var(--textColor2);
     border: 2px solid var(--borderColor);

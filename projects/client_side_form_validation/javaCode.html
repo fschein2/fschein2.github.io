@@ -3,7 +3,6 @@
     <head>
         <title>Java Code</title>
         <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
     </head>
 
     <body>
@@ -11,41 +10,51 @@
             <h4><a href="exampleCode.html">&lt; Back</a></h4>
         </div>
         <div class="code-content">
-            <div class="code-style">
-                <h1>Abstract Class</h1>
-                <img src="images/bikejava.png">
-                <h3>Explanation:</h3>
-                <p>
-                    Bike.java is an abstract class written to define the basic aspects of a Bike 
-                    in the context of one for this coding assignment.  It is the parent class to 
-                    three children classes KidsBike.java, Strider.java, and Tricycle.java. The link
-                    to this file and the rest the assignment will be below.
-                </p>
-                <a href="https://github.com/fschein2/design-patterns/tree/main/factory"><strong>Link</strong></a>
+            <div id="add-here">
+                <div class="code-style">
+                    <h1>Abstract Class</h1>
+                    <img src="images/bikejava.png">
+                    <h3>Explanation:</h3>
+                    <p>
+                        Bike.java is an abstract class written to define the basic aspects of a Bike 
+                        in the context of one for this coding assignment.  It is the parent class to 
+                        three children classes KidsBike.java, Strider.java, and Tricycle.java. The link
+                        to this file and the rest the assignment will be below.
+                    </p>
+                    <a href="https://github.com/fschein2/design-patterns/tree/main/factory"><strong>Link</strong></a>
+                </div>
             </div>
-            <form class="add-code">
+            <form id="add-code-form" class="add-code" method="POST" enctype="multipart/form-data">
                 <div>
                     <h2>Add Java Code</h2>
                     <p class="columns">
                         <label for="txt-code-type">Type of Code:</label>
-                        <input type="text" id="txt-code-type" required/>
+                        <input type="text" id="txt-code-type" name="txt-code-type" required/>
                     </p>
                     <p class="columns">
                         <label for="txt-explanation">Explanation:</label>
-                        <input type="text" id="txt-explanation" required/>
+                        <input type="text" id="txt-explanation" name="txt-explanation" required/>
                     </p>
                     <p class="columns">
                         <label for="code-link">Link to Code:</label>
-                        <input type="url" id="code-link" required/>
+                        <input type="url" id="code-link" name="code-link" required/>
                     </p>
-                    <!--<input type="file"/> MAKE NICER-->
-                    <button id="upload-img-button">Upload Image</button>
+                    <p class="columns">
+                        <label for="code-image">Image:</label>
+                        <input type="file" id="code-image" 
+                               name="code-image"
+                               accept="image/png, image/jpg, image/jpeg"
+                               required/> 
+                    </p>
                     
                 </div>
                 <div id="add-code-button">
                     <button type="submit" id="add-button">Add Code</button>
                 </div>
+
+                <p id="code-result"></p>
             </form>
         </div>
+        <script src="addcode.js"></script>
     </body>
 </html>
