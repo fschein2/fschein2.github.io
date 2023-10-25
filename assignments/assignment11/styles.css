@@ -5,3 +5,17 @@ body {
     color: black;
     background-color: dodgerblue;
 }
+
+div {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    padding-left: 0px;
+}
+
+li {
+    list-style: none;
+    padding-right: 5px;
+}
