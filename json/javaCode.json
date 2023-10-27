@@ -6,27 +6,27 @@
         "image": "https://fschein2.github.io/javaCodeImages/bikejava.png"
     },
     {
-        "codeType": "Abstract Class",
-        "explanation": "Bike.java is an abstract class written to define the basic aspects of a Bike in the context of one for this coding assignment. It is the parent class to three children classes KidsBike.java, Strider.java, and Tricycle.java. The link to this file and the rest the assignment will be below.",
-        "link": "https://github.com/fschein2/design-patterns/tree/main/factory",
-        "image": "https://fschein2.github.io/javaCodeImages/bikejava.png" 
+        "codeType": "",
+        "explanation": "",
+        "link": "",
+        "image": "" 
     },
     {
         "codeType": "Abstract Class",
-        "explanation": "Bike.java is an abstract class written to define the basic aspects of a Bike in the context of one for this coding assignment. It is the parent class to three children classes KidsBike.java, Strider.java, and Tricycle.java. The link to this file and the rest the assignment will be below.",
-        "link": "https://github.com/fschein2/design-patterns/tree/main/factory",
-        "image": "https://fschein2.github.io/javaCodeImages/bikejava.png"
+        "explanation": "VehicleDecorator.java is an abstract class that extends Vehicle is used to decorate an image of a vehicle built in the console using an ArrayList of String. It takes each the vehicle ArrayList and the decorated ArrayList and breaks done each String into char's and compares each char and if the decorated ArrayList contains a char that isn't '', it replaces the char in the same location as the original vehicle",
+        "link": "https://github.com/fschein2/design-patterns/tree/main/decorator",
+        "image": "https://fschein2.github.io/javaCodeImages/vehicledecoratorjava.png"
     },
     {
-        "codeType": "Abstract Class",
-        "explanation": "Bike.java is an abstract class written to define the basic aspects of a Bike in the context of one for this coding assignment. It is the parent class to three children classes KidsBike.java, Strider.java, and Tricycle.java. The link to this file and the rest the assignment will be below.",
-        "link": "https://github.com/fschein2/design-patterns/tree/main/factory",
-        "image": "https://fschein2.github.io/javaCodeImages/bikejava.png"
+        "codeType": "",
+        "explanation": "",
+        "link": "",
+        "image": ""
     },
     {
-        "codeType": "Abstract Class",
-        "explanation": "Bike.java is an abstract class written to define the basic aspects of a Bike in the context of one for this coding assignment. It is the parent class to three children classes KidsBike.java, Strider.java, and Tricycle.java. The link to this file and the rest the assignment will be below.",
-        "link": "https://github.com/fschein2/design-patterns/tree/main/factory",
-        "image": "https://fschein2.github.io/javaCodeImages/bikejava.png"
+        "codeType": "",
+        "explanation": "",
+        "link": "",
+        "image": ""
     }
 ]
