@@ -13,7 +13,9 @@ const addCode = (e) => {
     console.log(image);
 
     const result = document.getElementById("code-result");
-    result.innerHTML = "Your code has been submitted and will be added upon review.";
+    result.innerHTML = `Your code has been submitted and will be added upon review.
+                        <br>Type of Code: ${type}<br>Explanation: ${explanation}
+                        <br>Link: ${link}<br>Image: ${image}`;
 };
 
 document.getElementById("add-code-form").onsubmit = addCode;
