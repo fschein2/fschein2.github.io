@@ -64,3 +64,6 @@ const getCodeItem = (code) => {
 
     return div;
 };
+
+document.getElementById("add-code-form").onsubmit = addCode;
+showCode();

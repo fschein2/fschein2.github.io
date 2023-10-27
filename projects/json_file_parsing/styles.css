@@ -213,7 +213,7 @@ body {
 
 /* Expanded Code */
 
-.code-style {
+#code-style div{
     text-align: center;
     background-color: var(--tabColor);
     border: 2px solid var(--borderColor);
@@ -221,37 +221,38 @@ body {
     padding: 10px;
     max-width: 1200px;
     margin: auto;
+    margin-bottom: 20px;
 }
 
-.code-style h3 {
+#code-style h3 {
     text-align: left;
     margin-bottom: 0px;
 }
 
-.code-style p {
+#code-style p {
     text-align: left;
     margin-top: 0px;
 }
 
-.code-style img {
+#code-style img {
     width: 300px;
     height: 150px;
     border: 2px solid black;
     border-radius: 5px;
 }
 
-.code-style a {
+#code-style a {
     text-decoration: none;
     color: var(--textColor2);
     border-bottom: 2px solid transparent;
 }
 
-.code-style a:hover {
+#code-style a:hover {
     border-bottom: 2px solid var(--textColor2);
 }
 
 .add-code {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 10px;
 }
 
