@@ -3,30 +3,30 @@
         "codeType": "Abstract Class",
         "explanation": "Bike.java is an abstract class written to define the basic aspects of a Bike in the context of one for this coding assignment. It is the parent class to three children classes KidsBike.java, Strider.java, and Tricycle.java. The link to this file and the rest the assignment will be below.",
         "link": "https://github.com/fschein2/design-patterns/tree/main/factory",
-        "image": "https://fschein2.github.io/javaCodeImages/bikejava.png"
+        "image": "bikejava.png"
     },
     {
         "codeType": "Class",
         "explanation": "StackIterator.java is a class is used ot iterate through a Stack of Strings by checking if it has a next item and going to that next item.",
         "link": "https://github.com/fschein2/design-patterns/tree/main/iterator",
-        "image": "https://fschein2.github.io/javaCodeImages/stackiteratorjava.png" 
+        "image": "stackiteratorjava.png" 
     },
     {
         "codeType": "Abstract Class",
         "explanation": "VehicleDecorator.java is an abstract class that extends Vehicle is used to decorate an image of a vehicle built in the console using an ArrayList of Strings. It takes each the vehicle ArrayList and the decorated ArrayList and breaks done each String into char's and compares each char and if the decorated ArrayList contains a char that isn't '', it replaces the char in the same location as the original vehicle",
         "link": "https://github.com/fschein2/design-patterns/tree/main/decorator",
-        "image": "https://fschein2.github.io/javaCodeImages/vehicledecoratorjava.png"
+        "image": "vehicledecoratorjava.png"
     },
     {
         "codeType": "Interface",
         "explanation": "Observer.java is an interface that defines what the two classes that implement it must include.",
         "link": "https://github.com/fschein2/design-patterns/tree/main/observer",
-        "image": "https://fschein2.github.io/javaCodeImages/observerjava.png"
+        "image": "observerjava.png"
     },
     {
         "codeType": "Class",
         "explanation": "Anagram.java is a class defines what an Anagram is by checking if the User's answer to the question is correct by checking it against the real answer(s).",
         "link": "https://github.com/fschein2/design-patterns/tree/main/singleton",
-        "image": "https://fschein2.github.io/javaCodeImages/anagramjava.png"
+        "image": "anagramjava.png"
     }
 ]

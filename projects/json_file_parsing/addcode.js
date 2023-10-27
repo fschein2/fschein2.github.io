@@ -60,7 +60,7 @@ const getCodeItem = (code) => {
     const a = document.createElement("a");
     div.append(a);
     a.innerHTML = `<strong>Link</strong>`;
-    a.href = code.link;
+    a.href = `https://fschein2.github.io/javaCodeImages/${code.link}`;
 
     return div;
 };
