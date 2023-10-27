@@ -18,4 +18,29 @@ const addCode = (e) => {
                         <br>Link: ${link}<br>Image: ${image}`;
 };
 
+const loadCode = async () => {
+    const url = "";
+
+    try {
+        const response = await fetch(url);
+        return await response.json();
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+const showCode = async () => {
+    const codeList = await loadCode();
+    const codeDiv = document.getElementById("code-style");
+
+    codeList.forEach((code) => {
+        codeDiv.append(getCodeItem(code));
+    });
+};
+
+const getCodeItem = (code) => {
+    console.log(code.classType);
+};
+
 document.getElementById("add-code-form").onsubmit = addCode;
+showCode();
