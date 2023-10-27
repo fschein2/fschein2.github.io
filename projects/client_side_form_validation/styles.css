@@ -239,11 +239,6 @@ body {
     height: 150px;
     border: 2px solid black;
     border-radius: 5px;
-    transition: transform .2s;
-}
-
-#code-style img:hover {
-    transform: scale(2);
 }
 
 #code-style a {
