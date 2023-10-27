@@ -19,7 +19,7 @@ const addCode = (e) => {
 };
 
 const loadCode = async () => {
-    const url = "";
+    const url = "https://fschein2.github.io/json/javaCode.json";
 
     try {
         const response = await fetch(url);
@@ -39,7 +39,30 @@ const showCode = async () => {
 };
 
 const getCodeItem = (code) => {
-    console.log(code.classType);
+    const div = document.createElement("div");
+
+    const h1 = document.createElement("h1");
+    div.append(h1);
+    h1.innerHTML = code.codeType;
+
+    const img = document.createElement("img");
+    div.append(img);
+    img.src = code.image;
+
+    const h3 = document.createElement("h3");
+    div.append(h3);
+    h3.innerHTML = "Explanation:";
+
+    const p = document.createElement("p");
+    div.append(p);
+    p.innerHTML = code.explanation;
+
+    const a = document.createElement("a");
+    div.append(a);
+    a.innerHTML = `<strong>Link</strong>`;
+    a.href = code.link;
+
+    return div;
 };
 
 document.getElementById("add-code-form").onsubmit = addCode;
