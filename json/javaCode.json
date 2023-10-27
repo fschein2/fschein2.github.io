@@ -3,6 +3,6 @@
         "codeType": "Abstract Class",
         "explanation": "Bike.java is an abstract class written to define the basic aspects of a Bike in the context of one for this coding assignment. It is the parent class to three children classes KidsBike.java, Strider.java, and Tricycle.java. The link to this file and the rest the assignment will be below.",
         "link": "https://github.com/fschein2/design-patterns/tree/main/factory",
-        "image": "https://github.com/fschein2/fschein2.github.io/blob/main/projects/client_side_form_validation/images/bikejava.png"
+        "image": "https://fschein2.github.io/javaCodeImages/bikejava.png"
     }
 ]
