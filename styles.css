@@ -103,6 +103,17 @@ h1 {
     margin: 10px;
 }
 
+#node {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#node-image:hover {
+    border: 2px solid transparent;
+    border-radius: 0px;
+}
+
 /* Projects */
 
 #project-nav a, .assignments {
