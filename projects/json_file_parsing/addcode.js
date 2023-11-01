@@ -47,7 +47,7 @@ const getCodeItem = (code) => {
 
     const img = document.createElement("img");
     div.append(img);
-    img.src = code.image;
+    img.src = `https://fschein2.github.io/javaCodeImages/${code.image}`;
 
     const h3 = document.createElement("h3");
     div.append(h3);
