@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Java Code</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="back-nav">
+            <h4><a href="exampleCode.html">&lt; Back</a></h4>
+        </div>
+        <div class="code-content">
+            <div id="code-style"></div>
+            <form id="add-code-form" class="add-code" method="POST" enctype="multipart/form-data">
+                <div>
+                    <h2>Add Java Code</h2>
+                    <p class="columns">
+                        <label for="txt-code-type">Type of Code:</label>
+                        <input type="text" id="txt-code-type" name="txt-code-type" required/>
+                    </p>
+                    <p class="columns">
+                        <label for="txt-explanation">Explanation:</label>
+                        <input type="text" id="txt-explanation" name="txt-explanation" required/>
+                    </p>
+                    <p class="columns">
+                        <label for="code-link">Link to Code:</label>
+                        <input type="url" id="code-link" name="code-link" required/>
+                    </p>
+                    <p class="columns">
+                        <label for="code-image">Image:</label>
+                        <input type="file" id="code-image" 
+                               name="code-image"
+                               accept="image/png, image/jpg, image/jpeg"
+                               required/> 
+                    </p>
+                    
+                </div>
+                <div id="add-code-button">
+                    <button type="submit" id="add-button">Add Code</button>
+                </div>
+
+                <p id="code-result"></p>
+            </form>
+        </div>
+        <script src="addcode.js"></script>
+    </body>
+</html>
