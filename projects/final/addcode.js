@@ -2,19 +2,19 @@ const addCode = (e) => {
     e.preventDefault();
 
     const form = document.getElementById("add-code-form");
-    const type = form.elements["txt-code-type"].value;
+    const language = form.elements["txt-language"].value;
     const explanation = form.elements["txt-explanation"].value;
     const link = form.elements["code-link"].value;
     const image = form.elements["code-image"].value;
 
-    console.log(type);
+    console.log(language);
     console.log(explanation);
     console.log(link);
     console.log(image);
 
     const result = document.getElementById("code-result");
     result.innerHTML = `Your code has been submitted and will be added upon review.
-                        <br>Type of Code: ${type}<br>Explanation: ${explanation}
+                        <br>Code Language: ${language}<br>Explanation: ${explanation}
                         <br>Link: ${link}<br>Image: ${image}`;
 };
 
@@ -43,7 +43,7 @@ const getCodeItem = (code) => {
 
     const h1 = document.createElement("h1");
     div.append(h1);
-    h1.innerHTML = code.codeType;
+    h1.innerHTML = `Language: ${code.language}`;
 
     const img = document.createElement("img");
     div.append(img);
@@ -60,7 +60,7 @@ const getCodeItem = (code) => {
     const a = document.createElement("a");
     div.append(a);
     a.innerHTML = `<strong>Link</strong>`;
-    a.href = `https://fschein2.github.io/javaCodeImages/${code.link}`;
+    a.href = code.link;
 
     return div;
 };

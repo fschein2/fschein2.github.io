@@ -43,7 +43,7 @@ const getCodeItem = (code) => {
 
     const h1 = document.createElement("h1");
     div.append(h1);
-    h1.innerHTML = code.codeType;
+    h1.innerHTML = `Language: ${code.language}`;
 
     const img = document.createElement("img");
     div.append(img);
@@ -60,7 +60,7 @@ const getCodeItem = (code) => {
     const a = document.createElement("a");
     div.append(a);
     a.innerHTML = `<strong>Link</strong>`;
-    a.href = `https://fschein2.github.io/javaCodeImages/${code.link}`;
+    a.href = code.link;
 
     return div;
 };

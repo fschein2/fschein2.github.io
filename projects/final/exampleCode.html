@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Example Code</title>
+        <title>Java Code</title>
         <link rel="stylesheet" href="styles.css">
         <script src="script.js"></script>
     </head>
@@ -19,19 +19,39 @@
                 <a href="contactMe.html"><li id="contact-tab" class="nav">Contact Me</li></a>
             </ul>
         </div>
-        <div id="ex-code-content">
-            <div id="java-code" class="ex-code-style">
-                <!--<h1><a href="javaCode.html">Java</a></h1>-->
-                <a href="javaCode.html"><img src="images/javaLogo.png"></a>
-            </div>
-            <div id="cplus-code" class="ex-code-style">
-                <!--<h1><a href="javaCode.html">C++</a></h1>-->
-                <a href="javaCode.html"><img src="images/cplusplus.png""></a>
-            </div>
-            <div id="html-code" class="ex-code-style">
-                <!--<h1><a href="javaCode.html">HTML, CSS, JS</a></h1>-->
-                <a href="javaCode.html"><img src="images/html_css_js.png"></a>
-            </div>
+        <div class="code-content">
+            <div id="code-style"></div>
+            <form id="add-code-form" class="add-code" method="POST" enctype="multipart/form-data">
+                <div>
+                    <h2>Add Java Code</h2>
+                    <p class="columns">
+                        <label for="txt-language">Language:</label>
+                        <input type="text" id="txt-language" name="txt-language" required/>
+                    </p>
+                    <p class="columns">
+                        <label for="txt-explanation">Explanation:</label>
+                        <input type="text" id="txt-explanation" name="txt-explanation" required/>
+                    </p>
+                    <p class="columns">
+                        <label for="code-link">Link to Code:</label>
+                        <input type="url" id="code-link" name="code-link" required/>
+                    </p>
+                    <p class="columns">
+                        <label for="code-image">Image:</label>
+                        <input type="file" id="code-image" 
+                               name="code-image"
+                               accept="image/png, image/jpg, image/jpeg"
+                               required/> 
+                    </p>
+                    
+                </div>
+                <div id="add-code-button">
+                    <button type="submit" id="add-button">Add Code</button>
+                </div>
+
+                <p id="code-result"></p>
+            </form>
         </div>
+        <script src="addcode.js"></script>
     </body>
 </html>
