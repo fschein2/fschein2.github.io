@@ -282,6 +282,12 @@ input[type="url"] {
 #code-result {
     text-align: center;
 }
+/*
+#add-code-form {
+    background-color: var(--hoverColor);
+    padding: 10px;
+}
+*/
 
 /* Coding Projects */
 
